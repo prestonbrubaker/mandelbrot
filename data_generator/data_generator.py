@@ -15,7 +15,7 @@ def is_in_mandelbrot(c, max_iter):
     return True
 
 
-while running:
+while True:
   x = random.uniform(-2, 2)
   y = random.uniform(-2, 2)
   c = complex(x, y)
