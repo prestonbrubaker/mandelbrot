@@ -15,10 +15,10 @@ pCY = 800
 pSX = maxW / pCX
 pSY = maxH / pCY
 
-minX = -2
-minY = -2
-maxX = 2
-maxY = 2
+minX = -1
+minY = -1
+maxX = 0
+maxY = 0
 
 def is_in_mandelbrot(c, max_iter=100):
     z = 0
