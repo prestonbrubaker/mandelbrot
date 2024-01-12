@@ -41,6 +41,7 @@ for y in range(0, pCY):
         else:
             pygame.draw.rect(window, (0, 0, 0), (xSet, ySet, pSX, pSY))
         
-        
+
+time.sleep(1000)
         
         
