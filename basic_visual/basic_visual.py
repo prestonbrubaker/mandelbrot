@@ -9,8 +9,8 @@ maxH = 600
 window = pygame.display.set_mode((maxW, maxH))
 
 # Plotting dimensions
-pCX = 100
-pCY = 100
+pCX = 500
+pCY = 500
 
 pSX = maxW / pCX
 pSY = maxH / pCY
