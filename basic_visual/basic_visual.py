@@ -15,6 +15,11 @@ pCY = 800
 pSX = maxW / pCX
 pSY = maxH / pCY
 
+minX = -2
+minY = -2
+maxX = 2
+maxY = 2
+
 def is_in_mandelbrot(c, max_iter=100):
     z = 0
     for i in range(max_iter):
@@ -28,8 +33,8 @@ window.fill((100, 100, 100))
 for y in range(pCY):
     for x in range(pCX):
         # Convert pixel coordinate to complex number
-        xSet = (x / pCX - 0.5) * 4
-        ySet = (y / pCY - 0.5) * 4
+        xSet = x / pCX * (maxX - minX) + minX
+        ySet = y / pCY * (maxY - minY) + minY
         c = complex(xSet, ySet)
 
         # Check if the complex number is in the Mandelbrot set
