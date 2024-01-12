@@ -4,13 +4,13 @@ import time
 pygame.init()
 
 # Window dimensions
-maxW = 600
-maxH = 600
+maxW = 800
+maxH = 800
 window = pygame.display.set_mode((maxW, maxH))
 
 # Plotting dimensions
-pCX = 600
-pCY = 600
+pCX = 1600
+pCY = 1600
 
 pSX = maxW / pCX
 pSY = maxH / pCY
