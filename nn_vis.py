@@ -97,25 +97,8 @@ def loss(nodes_in, weights_in):
 #print(loss(nodes, weights))
 
 while True:
-    #print(loss(nodes, weights))
-    for i in range(0, len_weights):
-        weights_trial[i] = weights[i]
-    random_mag = 10 ** random.randint(-11, -1)
-    for i in range(0, len_weights):
-        if(random.uniform(0, 1) < 2 / len_weights):
-            weights_trial[i] += random.uniform(-1,1) * random_mag
-    
-    #print(weights_trial)
-    loss_trial = loss(nodes, weights_trial)
-    if(loss_trial < loss_best):
-        loss_best = loss_trial
-        #print("\n\n\n\n" + str(weights_trial))
-        print(str(loss_best))
-        for i in range(0, len_weights):
-            weights[i] = weights_trial[i]
-
-        species += 1
-    itC += 1
+    for x in range(0, 400):
+        for y in range(0, 400):
 
 
 
