@@ -60,7 +60,7 @@ def extract_numbers_from_file(file_path):
     try:
         with open(file_path, 'r') as file:
             for i, line in enumerate(file):
-                if i >= 1000:  # Process only the first 1000 lines
+                if i >= data_examples:  # Process only the first 1000 lines
                     break
 
                 parts = line.split()  # Split the line into parts
