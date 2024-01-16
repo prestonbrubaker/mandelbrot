@@ -9,6 +9,7 @@ weights_trial = []
 loss_best = 100000000000000
 itC = 0
 species = 0
+data_examples = 10000
 
 # 6x6 neural network with a bias node for each layer. Rectified linear function will be used.
 
@@ -85,12 +86,12 @@ extracted_numbers = extract_numbers_from_file(file_path)
 
 def loss(nodes_in, weights_in):
     sum = 0
-    for i in range(0, 1000):
+    for i in range(0, data_examples):
         x = extracted_numbers[i][0]
         y = extracted_numbers[i][1]
         a = extracted_numbers[i][2]
         a_guess = ff(x, y, weights_in, nodes_in)
-        loss = ((a - a_guess) ** 2) / 100
+        loss = ((a - a_guess) ** 2) / data_examples * 100
         sum += loss
 
     return sum
