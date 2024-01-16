@@ -9,7 +9,7 @@ weights_trial = []
 loss_best = 100000000000000
 itC = 0
 species = 0
-data_examples = 2000
+data_examples = 1000
 
 # 6x6 neural network with a bias node for each layer. Rectified linear function will be used.
 
