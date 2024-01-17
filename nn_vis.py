@@ -136,7 +136,7 @@ for y in range(pCY):
         print(c)
 
         # Check if the complex number is in the Mandelbrot set
-        if(c > 0.0 and c < 100):
+        if(c > 0.0 and c < 1):
             color = (255 * c, 255 * c, 255 * c)  # White for points in the set
         elif(c < 0):
             color = (0, 0, 0)       # Black for points not in the set
