@@ -136,10 +136,12 @@ for y in range(pCY):
         print(c)
 
         # Check if the complex number is in the Mandelbrot set
-        if(c > 0.0):
+        if(c > 0.0 and c < 100):
             color = (255 * c, 255 * c, 255 * c)  # White for points in the set
-        else:
+        elif(c < 0):
             color = (0, 0, 0)       # Black for points not in the set
+        else:
+            color = (100, 100, 100)
 
         # Draw the point
         pygame.draw.rect(window, color, (x * pSX, y * pSY, pSX, pSY))
