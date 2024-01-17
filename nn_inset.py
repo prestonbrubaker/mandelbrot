@@ -19,9 +19,9 @@ data_examples = 50
 
 
 len_weights = 6*6*5
-#for i in range(0, len_weights):
+for i in range(0, len_weights):
     #weights.append(0)
-    #weights_trial.append(0)
+    weights_trial.append(0)
 
 len_nodes = 6*6
 for i in range(0,len_nodes):
