@@ -141,7 +141,7 @@ for y in range(pCY):
         elif(c < 0):
             color = (0, 0, 0)       # Black for points not in the set
         else:
-            color = (100, 100, 100)
+            color = (255, 255, 255)
 
         # Draw the point
         pygame.draw.rect(window, color, (x * pSX, y * pSY, pSX, pSY))
